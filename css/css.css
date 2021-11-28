@@ -171,6 +171,10 @@ div h3 {
   margin-right: 0rem;
 }
 
+.bordes {
+  border-radius: 30px;
+}
+
 .logo {
   color: #d54a60;
   letter-spacing: 3px;
