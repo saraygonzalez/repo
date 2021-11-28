@@ -1,3 +1,16 @@
+/*VARIABLES*/
+.button-#d54a60 {
+  background: #d54a60;
+}
+
+.button-crimson {
+  background: crimson;
+}
+
+.button-black {
+  background: black;
+}
+
 * {
   padding: 0rem;
   margin: 0rem;
@@ -128,30 +141,6 @@ form {
   color: #d54a60;
 }
 
-.logo {
-  color: #d54a60;
-  letter-spacing: 3px;
-  font-size: 2rem;
-  text-align: center;
-  font-size: 2.3rem;
-}
-
-/*DESAFIO 12*/
-.imagenes {
-  position: relative;
-  top: 1rem;
-  bottom: 2rem;
-  width: 25%;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  padding: 0rem;
-  margin-left: 5%;
-  border-radius: 50px;
-  margin-right: 0rem;
-}
-
 h3 {
   color: #d54a60;
   font-size: 1.5rem;
@@ -160,15 +149,39 @@ h3 {
   margin-bottom: 1rem;
 }
 
-.h3 {
-  font-size: 1.5rem;
-  color: crimson;
-}
-
 div h3 {
   color: #d54a60;
   font-size: 2.5rem;
   text-align: center;
+}
+
+/*CLASES*/
+.imagenes {
+  position: relative;
+  top: 1rem;
+  bottom: 2rem;
+  width: 25%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0rem;
+  margin-left: 5%;
+  border-radius: 50px;
+  margin-right: 0rem;
+}
+
+.logo {
+  color: #d54a60;
+  letter-spacing: 3px;
+  font-size: 2rem;
+  text-align: center;
+  font-size: 2.3rem;
+}
+
+.h3 {
+  font-size: 1.5rem;
+  color: crimson;
 }
 
 .formulario {
@@ -188,7 +201,6 @@ div h3 {
   font-size: 1rem;
 }
 
-/*FIN DESAFIO 12*/
 .menu {
   color: #d54a60;
 }
@@ -264,14 +276,13 @@ img {
   margin-top: 2.5rem;
 }
 
-/*grid*/
 .grid {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 23rem 23rem 23rem;
-  grid-template-columns: 23rem 23rem 23rem;
+      grid-template-columns: 23rem 23rem 23rem;
   -ms-grid-rows: 23rem 23rem;
-  grid-template-rows: 23rem 23rem;
+      grid-template-rows: 23rem 23rem;
   padding: 0rem;
   margin: 0rem;
 }
@@ -283,12 +294,12 @@ img {
 
 .traslate {
   -webkit-transform: translate(-20px, -3px);
-  transform: translate(-20px, -3px);
+          transform: translate(-20px, -3px);
 }
 
 .scale {
   -webkit-transform: scale(1.2, 1, 7);
-  transform: scale(1.2, 1, 7);
+          transform: scale(1.2, 1, 7);
 }
 
 .make {

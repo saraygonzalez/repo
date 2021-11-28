@@ -1,3 +1,12 @@
+/*VARIABLES*/
+$ancho: 700px;
+$rosa:#d54a60;
+$colors: #d54a60, crimson, black;
+@each $color in $colors {
+    .button-#{$color}{
+        background: $color;
+    }
+}
 
 * {
     padding: 0rem;
@@ -59,7 +68,7 @@
     }
   }
     
-  div {
+div {
       ul {
         li{ 
            a:hover {
@@ -68,21 +77,21 @@
           }
         }
       }    
-  a {
+a {
     color: #d54a60;
     font-size: 1rem;
     text-decoration: none;
     position: relative;
   }
   
-  ul {
+ul {
     ul {
         position: absolute;
         display: none;
       }
   }
   
-  ul {
+ul {
       ul{
           li {
             display: block;
@@ -90,21 +99,21 @@
         }
       }    
   
-  ul {
-      li:hover{
-          ul {
+ul {
+    li:hover{
+        ul {
             display: block;
       }
     }
   }  
   
-  ol{
-      li {
+ol{
+    li {
       margin-left: 3rem;
       text-align: justify;
     }
   }
-  footer {
+footer {
     color: #302929;
     font-size: 1rem;
     position: relative;
@@ -117,80 +126,78 @@
     margin-bottom: 0.1rem;
   }
   
-  td {
+td {
     color: #302929;
     font-size: 1rem;
   }
   
-  div {
+div {
     color: #302929;
     font-size: 1rem;
   }
   
-  div p {
-    color: #302929;
-    font-size: 1rem;
-    width: 100%;
-  }
+div {
+      p {
+          color: #302929;
+          font-size: 1rem;
+          width: 100%;
+        }
+    }
   
-  form {
+form {
     color: #d54a60;
   }
-  
-  .logo {
-    color: #d54a60;
-    letter-spacing: 3px;
-    font-size: 2rem;
-    text-align: center;
-    font-size: 2.3rem;
-  }
-  
-  
-  
-  /*DESAFIO 12*/
-  .imagenes {
-    position: relative;
-    top: 1rem;
-    bottom: 2rem;
-    width: 25%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding: 0rem;
-    margin-left: 5%;
-    border-radius: 50px;
-    margin-right: 0rem;
-  }
-  
-  h3 {
+h3 {
     color: #d54a60;
     font-size: 1.5rem;
     margin-left: 0.5rem;
     margin-top: 2rem;
     margin-bottom: 1rem;
   }
-  .h3{
+div {
+    h3 {
+        color: #d54a60;
+        font-size: 2.5rem;
+        text-align: center;
+      }
+  }
+  /*CLASES*/
+  .imagenes {
+    position: relative;
+    top: 1rem;
+    bottom: 2rem;
+    width: 25%;
+    flex-direction: column;
+    padding: 0rem;
+    margin-left: 5%;
+    border-radius: 50px;
+    margin-right: 0rem;
+  }
+
+.logo {
+  color: #d54a60;
+  letter-spacing: 3px;
+  font-size: 2rem;
+  text-align: center;
+  font-size: 2.3rem;
+  }
+  
+.h3{
     font-size: 1.5rem;
     color: crimson;
   }
-  div h3 {
-    color: #d54a60;
-    font-size: 2.5rem;
-    text-align: center;
-  }
-  
-  .formulario {
+
+.formulario {
     color: #d54a60;
   }
   
-  .navegacion{
-    margin-top: 1.5rem;
-    margin-left: 8px;
-    }
+.navegacion{
+            margin-top: 1.5rem;
+            margin-left: 8px;
+          }
   
   
-  .parrafo{
+.parrafo{
     margin-top: 0.5rem;
     margin-left: 0.5rem;
     margin-bottom: 0.5rem;
@@ -198,25 +205,25 @@
     font-size: 1rem;
   }
   
-  /*FIN DESAFIO 12*/
-  .menu {
+.menu {
     color: #d54a60;
   }
   
-  .espacio {
+.espacio {
     margin-top: 7rem;
     position: absolute;
   }
   
-  .espacio2 {
+.espacio2 {
   margin-top: 2rem;
   margin-bottom: 2rem;
   }
-  .fa:hover {
+
+.fa:hover {
     opacity: 0.9;
   }
   
-  .fa {
+.fa {
     padding: 0.5rem;
     font-size: 1.5rem;
     width: 2rem;
@@ -224,7 +231,7 @@
     margin: 1rem 1.5rem;
   }
   
-  .fab {
+.fab {
     padding: 0.5rem;
     font-size: 1.5rem;
     width: 3rem;
@@ -233,34 +240,32 @@
     color: #d54a60;
   }
   
-  span {
+span {
     display: block;
     background-color: #9b8e9b;
     padding: 40px;
   }
   
   
-  .destacado {
+.destacado {
     margin-left: 2rem;
   }
   
-  img {
+img {
     padding: 1rem;
     position: relative;
   }
   
-  .padre {
-    display: -webkit-box;
-    display: -ms-flexbox;
+.padre {
     display: flex;
   }
   
-  .item {
+.item {
     padding: 20px;
     font-size: 2rem;
   }
   
-  .item2 {
+.item2 {
     padding: 5px;
     font-size: 16px;
     margin-bottom: 5px;
@@ -268,40 +273,34 @@
     position: relative;
   }
   
-  .nav2{
+.nav2{
     color: crimson;
     margin-left: -30%;
     margin-top: 2.5rem;
   }
-  
-  /*grid*/
-  .grid {
-    display: -ms-grid;
+
+.grid {
     display: grid;
-    -ms-grid-columns: 23rem 23rem 23rem;
-        grid-template-columns: 23rem 23rem 23rem;
-    -ms-grid-rows: 23rem 23rem;
-        grid-template-rows: 23rem 23rem;
+    grid-template-columns: 23rem 23rem 23rem;
+    grid-template-rows: 23rem 23rem;
     padding: 0rem;
     margin: 0rem;
   }
   
-  .degrade {
+.degrade {
     background: radial-gradient(#b95061, pink);
     width: 100%;
   }
   
   .traslate {
-    -webkit-transform: translate(-20px, -3px);
-            transform: translate(-20px, -3px);
+      transform: translate(-20px, -3px);
   }
   
-  .scale {
-    -webkit-transform: scale(1.2, 1, 7);
-            transform: scale(1.2, 1, 7);
+.scale {
+      transform: scale(1.2, 1, 7);
   }
   
-  .make{
+.make{
     font-weight: bold;
     color: crimson;
   }
