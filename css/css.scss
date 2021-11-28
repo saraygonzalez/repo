@@ -1,8 +1,8 @@
+
 * {
     padding: 0rem;
     margin: 0rem;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     font-family: 'Andada Pro', serif;
   }
   
@@ -31,14 +31,9 @@
   }
   
   nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: space-around;
+    align-items: center;
     min-height: 8vh;
     background-color: transparent;
   }
@@ -48,28 +43,31 @@
     margin: 0px;
     overflow: visible;
     list-style-type: none;
+    li {
+      color: #302929;
+      font-size: 1rem;
+      list-style-type: none;
+      padding: 0.2rem;
+      float: left;
+      display: block;
+      position: relative;
+      overflow: visible;
+      a {
+        display: inline-block;
+        font-size: 1.2rem;
+      }
+    }
   }
-  
-  ul li {
-    color: #302929;
-    font-size: 1rem;
-    list-style-type: none;
-    padding: 0.2rem;
-    float: left;
-    display: block;
-    position: relative;
-    overflow: visible;
-  }
-  
-  ul li a {
-    display: inline-block;
-    font-size: 1.2rem;
-  }
-  
-  div ul li a:hover {
-    color: grey;
-  }
-  
+    
+  div {
+      ul {
+        li{ 
+           a:hover {
+                    color: grey;
+                  }
+          }
+        }
+      }    
   a {
     color: #d54a60;
     font-size: 1rem;
@@ -77,24 +75,35 @@
     position: relative;
   }
   
-  ul ul {
-    position: absolute;
-    display: none;
+  ul {
+    ul {
+        position: absolute;
+        display: none;
+      }
   }
   
-  ul ul li {
-    display: block;
-  }
+  ul {
+      ul{
+          li {
+            display: block;
+          }
+        }
+      }    
   
-  ul li:hover ul {
-    display: block;
-  }
+  ul {
+      li:hover{
+          ul {
+            display: block;
+      }
+    }
+  }  
   
-  ol li {
-    margin-left: 3rem;
-    text-align: justify;
+  ol{
+      li {
+      margin-left: 3rem;
+      text-align: justify;
+    }
   }
-  
   footer {
     color: #302929;
     font-size: 1rem;
@@ -320,5 +329,5 @@
   h2 {
     color: crimson;
   }
-  
+
   /*# sourceMappingURL=css.css.map */

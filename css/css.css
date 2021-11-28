@@ -2,7 +2,7 @@
   padding: 0rem;
   margin: 0rem;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   font-family: 'Andada Pro', serif;
 }
 
@@ -35,10 +35,10 @@ nav {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-  justify-content: space-around;
+      justify-content: space-around;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   min-height: 8vh;
   background-color: transparent;
 }
